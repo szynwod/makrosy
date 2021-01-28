@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Kalkulator</title>
+	<link rel="shortcut icon" href="logo.ico">
+	<link rel="Stylesheet" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body background="background.png">
+<div id="container">
+<div id="header">
+<center>
+<a href="index.html">
+<img src="logo.png">
+</a> 
+<br>
+</div>
+
+<!-- Pole plci -->
+<form action="#n" name="theForm">
+<label class="color1"><input class="color1" type="radio"  name="genderS" value="1" checked>Kobieta</label>
+<label class="color1"><input class="color1" type="radio" name="genderS" value="0" >Mężczyzna</label>
+</form>
+
+<!-- Pole textowe -->
+<input type="number" placeholder="Wiek" id="wiek" onfocus="this.placeholder=''" onblur="this.placeholder='Wiek'">
+<br>
+<input type="number" placeholder="Waga (kg)" id="waga" onfocus="this.placeholder=''" onblur="this.placeholder='Waga (kg)'">
+<br>
+<input type="number" placeholder="Wzrost (cm)" id="wzrost" onfocus="this.placeholder=''" onblur="this.placeholder='Wzrost (cm)'">
+<br>
+
+<!-- Pole aktywnosci -->
+<select id="intensywnosc" >
+<option>Brak aktywności, praca siedząca</option>
+<option>Niska aktywność (praca siedząca i 1-2 treningi w tygodniu)</option>
+<option>Średnia aktywność (praca siedząca i treningi 3-4 razy w tygodniu)</option>
+<option>Wysoka aktywność (praca fizyczna i 3-4 treningi w tygodniu)</option>
+<option>Bardzo wysoka aktywność (zawodowi sportowcy, osoby codziennie trenujące)</option>
+</select>
+</br>
+
+<!-- Pole celu -->
+<select id="cel" >
+<option>Utrzymanie wagi</option>
+<option>Masa</option>
+<option>Redukcja</option>
+</select>
+
+ <!-- Pole przycisku -->
+<br>
+<button class="button" onclick="myFunction()" style="vertical-align:middle"><span>Oblicz</span></button>
+<p id="go"></p>
+
+<!-- Skrypt -->
+<script src="core.js"></script>
+</center>
+</div>
+<!-- Stopka -->
+<div id = footer>
+	<footer>
+		<p>bajceps.5v.pl &copy; 2019 Strona wykorzystuje pliki <a href= https://pl.wikipedia.org/wiki/HTTP_cookie> Cookies.</a></p>
+	</footer>
+</div>
+</body>
+</html>
